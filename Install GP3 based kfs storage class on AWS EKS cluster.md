@@ -149,9 +149,11 @@ example-iam-policy-for-gp3.json
 
 ```
 
-
+```
 aws iam create-policy --policy-name Katonic-EKS_EBS_CSI_Driver_Policy-{{ unique_id.stdout }} --policy-document file://example-iam-policy-for-gp3.json
-Note: Give unique id of to policy.
+```
+
+> Note: Give unique id of to policy.
 
  
 
