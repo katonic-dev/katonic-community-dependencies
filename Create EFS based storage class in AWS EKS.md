@@ -7,10 +7,14 @@ This step is necessary to enable the Kubernetes service accounts to authenticate
 ## Step 2: Create AWS EFS with a standard storage class to enable the encryption of data. 
 
 You need to create an EFS file system that can be used as persistent storage for your Kubernetes pods. You can choose the standard storage class to enable the encryption of data at rest. Encryption at rest uses AWS Key Management Service (KMS) to encrypt your data.
+![image](https://user-images.githubusercontent.com/99641515/224278387-1cef0975-4e88-411f-b9a6-50bf426c15d5.png)
+
 
 ## Step 3: In the network access select the VPC where you deploy the EKS cluster. After that select the Availability zone and subnet IDs of your created VPC. 
 
 When creating the EFS file system, you need to specify the VPC where you deploy the EKS cluster, and then select the Availability Zone and Subnet IDs for your EFS file system. This ensures that the EFS file system is created in the same network where your EKS cluster is running.
+![image](https://user-images.githubusercontent.com/99641515/224278448-9f8cd54c-99fa-4d2a-b661-2c70ddfc4e16.png)
+
 
 ## Step 4: Skip the remaining options and create the EFS.
 
