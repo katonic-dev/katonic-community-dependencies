@@ -42,40 +42,35 @@
                 "iam:ListPolicyTags",
                 "iam:ListRolePolicies",
                 "iam:DeleteOpenIDConnectProvider",
+                "iam:ListPolicies",
                 "iam:DeleteInstanceProfile",
                 "iam:GetRole",
                 "iam:GetInstanceProfile",
                 "iam:GetPolicy",
+                "iam:ListSAMLProviders",
                 "iam:ListEntitiesForPolicy",
+                "iam:ListRoles",
                 "iam:DeleteRole",
                 "iam:ListInstanceProfiles",
                 "iam:TagPolicy",
                 "iam:CreateOpenIDConnectProvider",
                 "iam:CreatePolicy",
                 "iam:ListPolicyVersions",
+                "iam:ListOpenIDConnectProviders",
                 "iam:UpdateRole",
                 "iam:GetOpenIDConnectProvider",
                 "iam:AddClientIDToOpenIDConnectProvider",
                 "iam:TagOpenIDConnectProvider",
-                "iam:GetRolePolicy"
+                "iam:GetRolePolicy",
+                "iam:DeleteSAMLProvider"
             ],
             "Resource": "*"
         },
         {
             "Sid": "VisualEditor2",
             "Effect": "Allow",
-            "Action": [
-                "iam:ListPolicies",
-                "iam:ListOpenIDConnectProviders",
-                "iam:ListRoles"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "VisualEditor3",
-            "Effect": "Allow",
             "Action": "iam:GetRole",
-            "Resource": "arn:aws:iam::<AWS-IAM-Account-Number>:role/*"
+            "Resource": "arn:aws:iam::674103662466:role/*"
         }
     ]
 }
